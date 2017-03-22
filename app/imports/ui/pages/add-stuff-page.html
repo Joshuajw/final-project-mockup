@@ -1,0 +1,14 @@
+<template name="Add_Stuff_Page">
+  {{#If_Logged_In}}
+  <div style="background-image: url('http://wallpapercave.com/wp/O8YkmrF.jpg')">
+    <div style="padding-top: 300px; padding-bottom: 300px" class="ui text container">
+      {{> quickForm
+      collection=stuffCollection
+      template="semanticUI"
+      id="AddStuffForm"
+      type="insert"
+      resetOnSuccess=true}}
+    </div>
+  </div>
+  {{/If_Logged_In}}
+</template>
