@@ -1,6 +1,7 @@
 <template name="List_Stuff_Page">
   {{#If_Logged_In}}
-    <div class="ui text container">
+  <div style="background-image: url('https://az616578.vo.msecnd.net/files/responsive/embedded/any/desktop/2015/12/23/635864397808587576-219845763_2008_06_04_-_Russett_-_Concord_Park_parking_garage_2.jpg')">
+    <div style="padding-top: 300px; padding-bottom: 300px" class="ui text container">
       {{#if Template.subscriptionsReady}}
         <table style="margin-top: 20px" class="ui celled table">
           <thead>
@@ -25,5 +26,6 @@
         {{> Loading}}
       {{/if}}
     </div>
+  </div>
   {{/If_Logged_In}}
 </template>
